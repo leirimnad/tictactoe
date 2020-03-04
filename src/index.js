@@ -78,6 +78,7 @@ function move(target, player, copied = false) {
 }
 
 function checkForWin(target, field, player) {
+
     // Horizontaly
     let horizontal = field.filter(e => e.includes(target))[0];
     if (horizontal.every(e => e.classList.contains(player.className))) {
